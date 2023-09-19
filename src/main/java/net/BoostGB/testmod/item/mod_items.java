@@ -15,6 +15,8 @@ public class mod_items {
 
     public static final RegistryObject<Item> ZIROCON = ITEMS.register("zircon",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
