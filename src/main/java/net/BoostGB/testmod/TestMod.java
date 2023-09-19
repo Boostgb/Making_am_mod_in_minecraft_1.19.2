@@ -1,6 +1,7 @@
 package net.BoostGB.testmod;
 
 import com.mojang.logging.LogUtils;
+import net.BoostGB.testmod.item.mod_items;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +21,8 @@ public class TestMod
     public TestMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        mod_items.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
