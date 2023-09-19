@@ -19,7 +19,6 @@ public class TestMod
     private static final Logger LOGGER = LogUtils.getLogger();
     public TestMod()
     {
-        //important comment
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
